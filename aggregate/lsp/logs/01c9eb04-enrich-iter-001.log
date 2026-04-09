@@ -1,0 +1,69 @@
+[2026-04-09T20:58:32Z] === ENRICH ITERATION 1 START | repo=benmosher/eslint-plugin-import sha=01c9eb04 ===
+[2026-04-09T20:58:32Z] [iter=1] PHASE START: enrich repo=benmosher/eslint-plugin-import sha=01c9eb04 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/01c9eb04-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/01c9eb04331d2efa8d63f2d7f4bfec3bc44c94f3.nq.gz
+[2026-04-09T20:59:23Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=83 MB
+[2026-04-09T20:59:30Z] [iter=1] AST store loaded triples=916252 load_secs=6 mem_mb=881 MB
+[2026-04-09T20:59:30Z] [iter=1] Step 2: Finding LSP targets mem_mb=881 MB
+[2026-04-09T20:59:30Z] [iter=1] LSP targets found call_sites=7673 imports=560 extends=1 implements=0 secs=0
+[2026-04-09T20:59:30Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=881 MB
+[2026-04-09T20:59:34Z] [iter=1] Position index built positions=66979 nodes_with_types=75571 secs=4 mem_mb=881 MB
+[2026-04-09T20:59:34Z] [iter=1] Step 3: Starting LSP resolution mem_mb=881 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T20:59:34Z] [iter=1] Resolving target type target_type=call_site count=7673
+[2026-04-09T20:59:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.0 files_done=0 resolved=0 errors=0 current=tests/src/rules/no-deprecated.js
+[2026-04-09T21:00:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=3 resolved=0 errors=93 current=tests/src/rules/no-named-export.js
+[2026-04-09T21:01:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=6 resolved=4 errors=229 current=tests/src/core/resolve.js
+[2026-04-09T21:02:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.3 files_done=7 resolved=6 errors=515 current=tests/src/core/importType.js
+[2026-04-09T21:04:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=8 resolved=6 errors=805 current=src/rules/order.js
+[2026-04-09T21:05:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.3 files_done=9 resolved=21 errors=1001 current=tests/src/rules/no-unused-modules.js
+[2026-04-09T21:08:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.2 files_done=10 resolved=21 errors=1473 current=tests/src/core/getExports.js
+[2026-04-09T21:10:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=11 resolved=23 errors=1695 current=resolvers/webpack/test/config-extensions/webpack.config.babel.js
+[2026-04-09T21:10:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.2 files_done=14 resolved=23 errors=1791 current=tests/src/rules/no-duplicates.js
+[2026-04-09T21:11:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=15 resolved=23 errors=1891 current=utils/parse.js
+[2026-04-09T21:12:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.6 files_done=18 resolved=31 errors=2001 current=src/rules/named.js
+[2026-04-09T21:14:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.6 files_done=20 resolved=32 errors=2325 current=tests/src/rules/max-dependencies.js
+[2026-04-09T21:15:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.7 files_done=23 resolved=33 errors=2500 current=tests/src/rules/prefer-default-export.js
+[2026-04-09T21:16:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.5 files_done=25 resolved=33 errors=2642 current=tests/src/rules/consistent-type-specifier-style.js
+[2026-04-09T21:16:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.1 files_done=27 resolved=43 errors=2727 current=tests/src/scc.js
+[2026-04-09T21:17:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.6 files_done=28 resolved=43 errors=2819 current=src/rules/first.js
+[2026-04-09T21:17:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.2 files_done=32 resolved=47 errors=2902 current=resolvers/node/test/paths.js
+[2026-04-09T21:18:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.7 files_done=35 resolved=47 errors=2994 current=src/rules/no-duplicates.js
+[2026-04-09T21:19:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.5 files_done=36 resolved=47 errors=3117 current=tests/src/rules/no-cycle.js
+[2026-04-09T21:19:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.1 files_done=37 resolved=47 errors=3211 current=tests/src/core/hash.js
+[2026-04-09T21:20:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.8 files_done=40 resolved=49 errors=3319 current=tests/src/rules/no-unresolved.js
+[2026-04-09T21:20:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=41 resolved=58 errors=3417 current=tests/src/rules/exports-last.js
+[2026-04-09T21:21:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.0 files_done=44 resolved=62 errors=3519 current=src/index.js
+[2026-04-09T21:22:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=46 resolved=125 errors=3658 current=tests/src/rules/no-extraneous-dependencies.js
+[2026-04-09T21:23:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.5 files_done=47 resolved=164 errors=3759 current=src/rules/no-unused-modules.js
+[2026-04-09T21:24:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=48 resolved=182 errors=4004 current=tests/src/rules/no-namespace.js
+[2026-04-09T21:25:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.8 files_done=50 resolved=184 errors=4133 current=src/rules/no-commonjs.js
+[2026-04-09T21:26:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.5 files_done=52 resolved=212 errors=4240 current=tests/src/rules/no-useless-path-segments.js
+[2026-04-09T21:26:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.1 files_done=56 resolved=223 errors=4331 current=src/exportMap/visitor.js
+[2026-04-09T21:27:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.9 files_done=58 resolved=223 errors=4459 current=utils/hash.js
+[2026-04-09T21:28:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.5 files_done=62 resolved=240 errors=4561 current=tests/src/rules/group-exports.js
+[2026-04-09T21:28:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.1 files_done=66 resolved=258 errors=4646 current=resolvers/webpack/test/packageMains.js
+[2026-04-09T21:29:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.7 files_done=69 resolved=284 errors=4741 current=src/rules/enforce-node-protocol-usage.js
+[2026-04-09T21:29:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=73 resolved=301 errors=4837 current=resolvers/webpack/index.js
+[2026-04-09T21:30:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.9 files_done=74 resolved=322 errors=4938 current=src/exportMap/namespace.js
+[2026-04-09T21:31:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.5 files_done=80 resolved=330 errors=5036 current=src/rules/no-named-export.js
+[2026-04-09T21:31:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.1 files_done=85 resolved=352 errors=5132 current=src/rules/no-anonymous-default-export.js
+[2026-04-09T21:32:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.6 files_done=90 resolved=361 errors=5219 current=src/exportMap/childContext.js
+[2026-04-09T21:32:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.2 files_done=94 resolved=393 errors=5308 current=tests/src/rules/no-default-export.js
+[2026-04-09T21:33:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.7 files_done=97 resolved=396 errors=5393 current=src/exportMap/index.js
+[2026-04-09T21:33:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.3 files_done=100 resolved=414 errors=5480 current=src/rules/no-internal-modules.js
+[2026-04-09T21:34:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.9 files_done=103 resolved=423 errors=5574 current=resolvers/webpack/test/modules.js
+[2026-04-09T21:35:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.6 files_done=110 resolved=452 errors=5696 current=src/rules/no-nodejs-modules.js
+[2026-04-09T21:35:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.2 files_done=115 resolved=458 errors=5787 current=tests/src/exportMap/childContext.js
+[2026-04-09T21:36:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=117 resolved=468 errors=5872 current=resolvers/webpack/test/files/webpack.config.js
+[2026-04-09T21:36:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.4 files_done=122 resolved=478 errors=5981 current=src/rules/prefer-default-export.js
+[2026-04-09T21:37:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.1 files_done=130 resolved=486 errors=6087 current=src/rules/extensions.js
+[2026-04-09T21:38:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.6 files_done=137 resolved=512 errors=6176 current=tests/files/no-unused-modules/dynamic-import-js-2.js
+[2026-04-09T21:38:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.2 files_done=147 resolved=519 errors=6266 current=src/rules/no-mutable-exports.js
+[2026-04-09T21:39:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.7 files_done=162 resolved=527 errors=6347 current=tests/files/no-unused-modules/dynamic-import-js.js
+[2026-04-09T21:39:30Z] [iter=1] Target type resolved target_type=call_site resolved=545 errors=6380 secs=2395 mem_mb=881 MB
+[2026-04-09T21:39:30Z] [iter=1] Resolving target type target_type=import_statement count=560
+[2026-04-09T21:39:45Z] [iter=1] Target type resolved target_type=import_statement resolved=299 errors=0 secs=15 mem_mb=881 MB
+[2026-04-09T21:39:45Z] [iter=1] Resolving target type target_type=extends_clause count=1
+[2026-04-09T21:39:45Z] [iter=1] HEARTBEAT target_type=extends_clause elapsed_min=41.2 files_done=0 resolved=0 errors=0 current=tests/files/typescript-export-react-test-renderer/index.d.ts
+[2026-04-09T21:39:46Z] [iter=1] Target type resolved target_type=extends_clause resolved=1 errors=0 secs=2 mem_mb=881 MB
+[2026-04-09T21:39:56Z] [iter=1] Step 5: Writing final enrichment file triples=103131
+[2026-04-09T21:39:58Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/01c9eb04331d2efa8d63f2d7f4bfec3bc44c94f3.nq.gz size_kb=2137
+[2026-04-09T21:39:58Z] [iter=1] PHASE END: enrich elapsed_s=2486 elapsed_min=41.4 total_triples=103131
